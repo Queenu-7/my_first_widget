@@ -16,36 +16,40 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## Swipe to Delete App
-# About the App
-
-This is a simple Flutter app that displays a list of tasks. Users can swipe a task to delete it from the list.
+# Swipe to Delete App
+## Widget Description
+The Dismissible widget in Flutter allows users to dismiss a list item by swiping it. This demo uses it to delete tasks from a simple to-do list.
 
 ## Features
-- Displays a list of tasks.
+- Displays a list of everyday tasks.
 - Allows users to swipe right to delete a task.
-- Shows a delete icon when swiping.
-- Displays a message when a task is deleted.
-- Uses a simple and clean user interface.
+- Shows a red background with a delete icon.
+- Displays a confirmation message after deletion.
 ## Technologies Used
 - Flutter
 - Dart
-- Material Design widgets
-## How It Works
-- The app displays tasks such as Buy milk, Study Flutter, Call mom, and Go to gym.
-- The user swipes a task from left to right.
-- The Dismissible widget removes the task.
-- A SnackBar displays a message confirming the deletion.
+- Material Design
 ## How to Run the App
 1. Install Flutter and set up your development environment.
-2. Create a Flutter project.
-3. Replace the code in lib/main.dart with the app code.
+2. Clone or download this repository.
+3. Open the project folder in your terminal.
+## Run:
+- flutter pub get
+- flutter run
+## Three Widget Properties
+1. key
+Purpose: Uniquely identifies each list item.
+Used value: ValueKey(item)
+What it changes: Helps Flutter identify which item is being dismissed when the list changes.
+Why use it: It prevents Flutter from confusing list items during updates.
+2. background
+Purpose: Defines the background displayed when an item is swiped.
+Used value: A red container with a white delete icon.
+What it changes: Displays a red background and delete icon behind the task.
+Why use it: It gives users a clear visual indication that the task can be deleted.
+3. direction
+Purpose: Controls the direction in which an item can be dismissed.
+Used value: DismissDirection.startToEnd
+What it changes: Allows the user to swipe from left to right.
+Why use it: It makes the deletion gesture consistent and easy to understand.
 
-Run the following command:
-flutter run
-
-## What I Learned
-How to use the Dismissible widget.
-How to remove items from a list using setState().
-How to display messages using SnackBar.
-How to build a simple user interface in Flutter.
