@@ -17,7 +17,7 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ## Swipe to Delete App
-#About the App
+# About the App
 
 This is a simple Flutter app that displays a list of tasks. Users can swipe a task to delete it from the list.
 
