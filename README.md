@@ -37,19 +37,22 @@ The Dismissible widget in Flutter allows users to dismiss a list item by swiping
 - flutter pub get
 - flutter run
 ## Three Widget Properties
-1. key
-Purpose: Uniquely identifies each list item.
-Used value: ValueKey(item)
-What it changes: Helps Flutter identify which item is being dismissed when the list changes.
+## 1. key
+- Purpose: Uniquely identifies each list item.
+- Used value: ValueKey(item)
+- What it changes: Helps Flutter identify which item is being dismissed when the list changes.
 Why use it: It prevents Flutter from confusing list items during updates.
-2. background
-Purpose: Defines the background displayed when an item is swiped.
-Used value: A red container with a white delete icon.
-What it changes: Displays a red background and delete icon behind the task.
+## 2. background
+- Purpose: Defines the background displayed when an item is swiped.
+- Used value: A red container with a white delete icon.
+- What it changes: Displays a red background and delete icon behind the task.
 Why use it: It gives users a clear visual indication that the task can be deleted.
-3. direction
-Purpose: Controls the direction in which an item can be dismissed.
-Used value: DismissDirection.startToEnd
-What it changes: Allows the user to swipe from left to right.
-Why use it: It makes the deletion gesture consistent and easy to understand.
+## 3. direction
+- Purpose: Controls the direction in which an item can be dismissed.
+- Used value: DismissDirection.startToEnd
+- What it changes: Allows the user to swipe from left to right.
+- Why use it: It makes the deletion gesture consistent and easy to understand.
+
+## What I Learned
+In this project, I learned how to use the Dismissible widget to remove tasks from a list. I also learned how setState() updates the interface and how SnackBar displays a message after a task is deleted.
 
